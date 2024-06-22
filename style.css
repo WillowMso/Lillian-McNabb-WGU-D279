@@ -1,0 +1,115 @@
+.container{
+    display: grid;
+    grid-template-rows: 100px 50px 100px 600px 100px 100px 100px;
+    grid-template-columns: 209px 209px 209px 209px 209px 209px;
+}
+    .logo{
+        position: fixed top;
+        background-color :white;
+        color: black;
+        grid-area: 1 / 1 / 1 / -1;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1f;
+    }
+        .logo_img{
+            height: 100px;
+        }
+        h1{
+            background-color: skyblue;
+            color: black;
+            grid-area: 1 / 3 / 1 / 5;
+            border-style: inset;
+            text-align: center;
+            padding-top: 5px;
+        }
+        #logo{
+            grid-area: 1 / 6 / 1 / 6;
+        }
+        #plogo{
+            grid-area: 1 / 1 / 1 / 1;
+        }
+    .navigation {
+        position: fixed bottom;
+        background-color: midnightblue;
+        color: whitesmoke;
+        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+        padding: 8px;
+        grid-area: 2 / 1 / 2 / -1;
+    }
+        #index{
+            grid-column: 1 / 1;
+        }
+        #cats{
+            grid-column: 2 / 2;
+        }
+        #dogs{
+            grid-column: 3 / 3;
+        }
+        #fish{
+            grid-column: 4 / 4;
+        }
+        #form{
+            grid-column: 7 / 7;
+            border-style: solid;
+            background-color: dimgray;
+            color: white;
+            border-color: midnightblue;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+        .button1{
+            float: left;
+            border-style: solid;
+            background-color: dimgray;
+            color: white;
+            border-color: midnightblue;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 25px;
+            margin-right: 65px;
+            margin-left: 65px;
+        }
+    .main{
+        background-color: dimgray;
+        color: whitesmoke;
+        grid-area: 3 / 1 / -2 / -1;
+        display: grid;
+        grid-template-columns: 150px 1fr 1fr;
+        grid-template-rows: 75px 100px 100px 75px;
+    }
+        h2{
+            background-color: skyblue;
+            color:black;
+            border-style: inset;
+            border-color: skyblue;
+            text-align: left;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            margin-right: 50px;
+            margin-left: 10px;
+            grid-area: 1 / 1 / 1 / 1;
+        }
+        #p1{
+            grid-area: 2 / 1 / 2 / -1;
+        }
+        #p2{
+            grid-area: 5 / 1 / 5 / -1;
+        }
+        #l1{
+            grid-area: 4 / 1 / 4 / -1;
+        }
+        #catbutton{
+            height: 200px;
+            grid-area: 6 / 1 / 6 / 1;
+        }
+    .footer{
+        color: black;
+        background-color: silver;
+        grid-area: -3 / 1 / -1 / -1
+    }
